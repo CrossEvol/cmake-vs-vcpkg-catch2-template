@@ -1,7 +1,7 @@
 ﻿#include <fmt/core.h>
+#include "static/helloworld.h"
 
-int main()
+void Hello::print()
 {
     fmt::print("Hello World!\n");
-    return 0;
 }
