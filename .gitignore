@@ -364,7 +364,9 @@ FodyWeavers.xsd
 
 # IDE
 .vs
+.vscode
 
 # Generated\
 build
 out
+vcpkg_installed

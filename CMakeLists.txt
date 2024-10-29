@@ -3,7 +3,10 @@
 project(HelloWorld)
 
 find_package(fmt CONFIG REQUIRED)
-
 add_executable(HelloWorld helloworld.cpp)
-
 target_link_libraries(HelloWorld PRIVATE fmt::fmt)
+
+find_package(Catch2 3 REQUIRED)
+# These tests can use the Catch2-provided main
+add_executable(tests "tests.cpp")
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
